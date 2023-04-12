@@ -1,0 +1,30 @@
+body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: url("../img/fondo.png");
+}
+h1{
+    background-color: #f7d2f2;
+    color: #4b0e57;
+    margin: 0px 10px 10px 10px;
+    padding: 10px;     
+}
+.inicioadop {
+    background-color: #ffffff;
+    color: #4b0e57;
+    margin: 15px;
+    padding: 10px;
+}
+.inicioadop p{
+     padding: 5px;
+}
+h2{
+    background-color: #f7d2f2;
+    color: #4b0e57;
+    margin: 0px 10px 10px 10px;
+    padding: 10px; 
+}
+form{
+    background-color: #ffffff;
+    margin: 15px;
+    padding: 10px;
+}

@@ -4,25 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/contactoes.css">
+    <title>GATco</title>
 </head>
 <body>
     <header>
         <nav>
            <ul>
                <li><a href="../index.html">INICIO</a></li>
-               <li><a href="pages/adoptante.html">FORM. ADOPTANTE</a></li>
-               <li><a href="pages/gatitos.html">GATITOS</a></li>
+               <li><a href="../pages/adoptante.html">FORM. ADOPTANTE</a></li>
+               <li><a href="../pages/gatitos.html">GATITOS</a></li>
                <li><a href="contacto.html">CONTACTO</a></li>
            </ul>
            </ul>
         </nav>
     </header>
     <main>
-        <div>
+        <div class="iniciocontact">
             <h1>Contacto</h1>
+            <p>Para hacer una consulta informá tu nombre, tu mail y el mensaje que queres transmitir:</p>
         </div>
+        <div>
          <form action="" method="post">
+            <div>
+                <p>Si quieres saber novedades sobre los gatitos o quieres dejarnos
+                   informacion de nuevos casos, ingresa tu mail. Todos los mensajes 
+                   seran revisados y nos contactaremos via mail.</p>
+             </div>
+                <div>
+                    <label for="txtNombre">Nombre*</label>  
+                    <input type="text" name="txtNombre" id="txtNombre" required>
+                 </div>
+                 <div>
+                    <label for="txtApellido">Apellido*</label>  
+                    <input type="text" name="txtApellido" id="txtApellido" required>
+                 </div>
             <div>
                 <label for="txtCorreo">Email*</label>  
                 <input type="email" name="txtCorreo" id="txtCorreo" placeholder="Ej:sol123@hotmail.com" required>
@@ -31,12 +47,15 @@
                 <label for="txtMensaje">Mensaje</label>
                 <textarea name="txtMensaje" id="txtMensaje" placeholder="Escribe aqui.."> </textarea>
              </div>
+             <div>
+                <button type="submit" name="btnEnviar" id="btnEnviar" >ENVIAR</button>
+            
+                <button type="reset" name="btnBorrar" id="btnBorrar" >BORRAR</button>
+             </div>
+             
          </form>
-         <div>
-            <p>Si quieres saber novedades sobre los gatitos o quieres dejarnos
-               informacion de nuevos casos, ingresa tu mail. Todos los mensajes 
-               seran revisados y nos contactaremos via mail.</p>
          </div>
+         
     </main>
 </body>
 </html>
