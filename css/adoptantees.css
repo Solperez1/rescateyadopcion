@@ -1,12 +1,98 @@
-body{
-        font-family: Arial, Helvetica, sans-serif;
-        background-image: url("../img/fondo.png");
+html{
+  font-family: 'Poppins', sans-serif;
 }
-h1{
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url("../img/fondo.jpg");
+}
+.navinicio{
+  background-color: #4b0e57;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+.navinicio ul{
+  margin:0;
+}
+.navinicio ul li{
+  display: inline-block;
+  padding: 0px 12px; 
+} 
+.navinicio li{
+  list-style-type: none;
+}
+.navinicio a{
+  color: #ffffff;  
+  font-weight:bold ;
+  text-decoration: none;
+}
+a:hover{
+  color: #e74f89;
+}
+.navlogo img{ 
+  align-items: center;
+  display: block; 
+  margin: 5px 20px;
+}
+
+.btnpadre {
+  position: relative;
+  display: inline-block;
+  padding-right: 20px;
+}
+.btnmenu {
+  background-color: #4b0e57;
+  color: white;
+  padding:0px 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif; 
+  font-weight:bold ;
+}
+.btncontenido {
+  display: none;
+  position: absolute;
+  background-color: #ffffffe8;
+  min-width: 160px;
+  box-shadow: 5px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.btncontenido a {
+  color:#4b0e57;
+  /*padding: 12px 16px;*/
+  text-decoration: none;
+  display: block;
+  font-family: 'Poppins', sans-serif ;
+  padding: 5px;
+}
+.btncontenido a:hover {
+  background-color:  #84289793
+}
+.btnpadre:hover .btncontenido {
+  display: block;
+}
+.btnpadre:hover .btnmenu {
+  background-color: #4b0e57;
+}
+/*h1{
     background-color: #f7d2f2;
     color: #4b0e57;
     margin: 0px 10px 10px 10px;
     padding: 10px;     
+}*/
+.homeadop{
+  color: #ffffff;
+  background-color: #8428973f;
+  width: 100%; 
+}
+h1{
+  font-size: 2.5rem;
+  padding: 90px 0px 5px 0px;
+  margin: 0px 0px 15px 15px;  
 }
 .inicioadop {
     background-color: #ffffff;
@@ -27,4 +113,24 @@ form{
     background-color: #ffffff;
     margin: 15px;
     padding: 10px;
+}
+
+.iniciofooter{
+  background-color: #641c7286;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+ 
+}
+.iniciofooter p{
+   padding: 0px 15px;
+   text-decoration: none;
+   color: #230629;
+}
+.iniciofooter a{
+  font-weight: bold;
+  color: #1e0424;
+}
+.iniciofooter a:hover{
+  color: #ffffff;
 }

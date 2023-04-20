@@ -1,43 +1,43 @@
 html{
     font-family: 'Poppins', sans-serif;
-}
-body{
+  }
+  body{
     margin: 0;
     padding: 0;
     background-image: url("../img/fondo.jpg");
-}
-.navinicio{
+  }
+  .navinicio{
     background-color: #4b0e57;
     width: 100%;
     position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center; 
-}
-.navinicio ul{
+  }
+  .navinicio ul{
     margin:0;
-}
-.navinicio ul li{
+  }
+  .navinicio ul li{
     display: inline-block;
     padding: 0px 12px; 
-} 
-.navinicio li{
+  } 
+  .navinicio li{
     list-style-type: none;
-}
-.navinicio a{
+  }
+  .navinicio a{
     color: #ffffff;  
     font-weight:bold ;
     text-decoration: none;
-}
-a:hover{
+  }
+  a:hover{
     color: #e74f89;
-}
-.navlogo img{ 
+  }
+  .navlogo img{ 
     align-items: center;
     display: block; 
     margin: 5px 20px;
-}
-
+  }
+  
   .btnpadre {
     position: relative;
     display: inline-block;
@@ -71,54 +71,51 @@ a:hover{
   }
   .btncontenido a:hover {
     background-color:  #84289793
- }
+  }
   .btnpadre:hover .btncontenido {
     display: block;
   }
   .btnpadre:hover .btnmenu {
     background-color: #4b0e57;
   }
-
-.inicio{
+  /*h1{
+      background-color: #f7d2f2;
+      color: #4b0e57;
+      margin: 0px 10px 10px 10px;
+      padding: 10px;     
+  }*/
+  .homeadop{
     color: #ffffff;
     background-color: #8428973f;
     width: 100%; 
-}
-.inicio h1{
+  }
+  h1{
     font-size: 2.5rem;
     padding: 90px 0px 5px 0px;
     margin: 0px 0px 15px 15px;  
-}
-.menuimg img{
-    display: block;
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
-}
-.info{
-    background-color:#f9dbf5 ;
-    margin: 15px;
-    padding: 15px;
-    border: 3px #ffffff  solid;
-    text-align: center;
-}
-.info h3{
-    color: #4b0e57;
-}
-.video{
-    background-color: #ffffffab;
-    width: 100%;
-}
-.video iframe{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.video p{
-    text-align: center;
-    margin: 15px;
-}
-.iniciofooter{
+  }
+  .inicioadop {
+      background-color: #ffffff;
+      color: #4b0e57;
+      margin: 15px;
+      padding: 10px;
+  }
+  .inicioadop p{
+       padding: 5px;
+  }
+  h2{
+      background-color: #f7d2f2;
+      color: #4b0e57;
+      margin: 0px 10px 10px 10px;
+      padding: 10px; 
+  }
+  form{
+      background-color: #ffffff;
+      margin: 15px;
+      padding: 10px;
+  }
+ 
+  .iniciofooter{
     background-color: #641c7286;
     width: 100%;
     display: flex;
