@@ -37,47 +37,50 @@ html{
     display: block; 
     margin: 5px 20px;
   }
-  
-  .btnpadre {
-    position: relative;
-    display: inline-block;
-    padding-right: 20px;
-  }
-  .btnmenu {
-    background-color: #4b0e57;
-    color: white;
-    padding:0px 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    font-family: 'Poppins', sans-serif; 
-    font-weight:bold ;
-  }
-  .btncontenido {
-    display: none;
-    position: absolute;
-    background-color: #ffffffe8;
-    min-width: 160px;
-    box-shadow: 5px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  .btncontenido a {
-    color:#4b0e57;
-    /*padding: 12px 16px;*/
-    text-decoration: none;
-    display: block;
-    font-family: 'Poppins', sans-serif ;
-    padding: 5px;
-  }
-  .btncontenido a:hover {
-    background-color:  #84289793
-  }
-  .btnpadre:hover .btncontenido {
-    display: block;
-  }
-  .btnpadre:hover .btnmenu {
-    background-color: #4b0e57;
-  }
+  /*parte del boton menu*/
+.btnpadre {
+  position: relative;
+  display: inline-block;
+  padding-right: 20px;
+  text-align: center;
+}
+.btnmenu {
+  background-color: #4b0e57;
+  color: white;
+  padding-right: 15px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif; 
+  font-weight:bold ;
+  text-align: center;
+}
+.btncontenido {
+  display: none;
+  position: absolute;
+  background-color: #ffffffe8;
+  box-shadow: 5px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.btncontenido a {
+  color:#4b0e57;
+  /*padding: 12px 16px;*/
+  text-decoration: none;
+  display: block;
+  font-family: 'Poppins', sans-serif ;
+  padding: 5px;
+  margin: 5px;
+}
+.btncontenido a:hover {
+  background-color:  #84289793
+}
+.btnpadre:hover .btncontenido {
+  display: block;
+}
+.btnpadre:hover .btnmenu {
+  background-color: #4b0e57;
+}
+/* inicia la pagina*/
   .inicioNOS{
     color: #ffffff;
     background-color: #8428973f;
@@ -87,22 +90,41 @@ html{
     font-size: 2.5rem;
     padding: 90px 0px 5px 0px;
     margin: 0px 0px 15px 15px;  
+    font-weight: bold;
 }
-.menuimgNOS img{
-    display: block;
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 .infoNOS{
     background-color: #ffffff;
     text-align: center;
-    margin: 15px;
+    margin: 20px;
     padding: 10px;
     border: 3px #f7d2f2 dotted;
 }
 .infoNOS h3{
     color: #4b0e57;
+}
+.inicio h1{
+  font-size: 3.5rem;
+  padding: 90px 0px 250px 0px;
+  margin: 0px 0px 0px 15px; 
+  font-weight: bold; 
+  text-align: center;
+  color: #4b0e57;
+}
+
+.info{
+  background-color:#ffffff ;
+  border: 3px #f7d2f2 dotted;
+  text-align: center;
+  margin: 20px;
+}
+.info h2{
+  color: #4b0e57;
+  padding:15px 20px 0px 20px;
+}
+.info p{
+  text-align: center;
+  padding:10px 30px 10px 30px;
 }
   .iniciofooter{
     background-color: #641c7286;

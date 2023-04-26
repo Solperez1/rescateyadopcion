@@ -37,27 +37,28 @@ a:hover{
   display: block; 
   margin: 5px 20px;
 }
-
+/*parte del boton menu*/
 .btnpadre {
   position: relative;
   display: inline-block;
   padding-right: 20px;
+  text-align: center;
 }
 .btnmenu {
   background-color: #4b0e57;
   color: white;
-  padding:0px 16px;
+  padding-right: 15px;
   font-size: 16px;
   border: none;
   cursor: pointer;
   font-family: 'Poppins', sans-serif; 
   font-weight:bold ;
+  text-align: center;
 }
 .btncontenido {
   display: none;
   position: absolute;
   background-color: #ffffffe8;
-  min-width: 160px;
   box-shadow: 5px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -68,6 +69,7 @@ a:hover{
   display: block;
   font-family: 'Poppins', sans-serif ;
   padding: 5px;
+  margin: 5px;
 }
 .btncontenido a:hover {
   background-color:  #84289793
@@ -78,6 +80,7 @@ a:hover{
 .btnpadre:hover .btnmenu {
   background-color: #4b0e57;
 }
+/* inicia la pagina*/
 /*h1{
     background-color: #f7d2f2;
     color: #4b0e57;
@@ -92,34 +95,88 @@ a:hover{
 h1{
   font-size: 2.5rem;
   padding: 90px 0px 5px 0px;
-  margin: 0px 0px 15px 15px;  
+  margin: 0px 0px 15px 20px;  
+  font-weight: bold;
 }
 .inicioadop {
     background-color: #ffffff;
     color: #4b0e57;
-    margin: 15px;
-    padding: 10px;
+    margin: 20px 40px 20px 40px;
+    padding: 15px;
+    
 }
 .inicioadop p{
-     padding: 5px;
+    text-align: center;
+    padding:10px 30px 10px 20px;
+}
+.infop p{
+  text-align: justify;
+}
+.formfondo{
+  background-color: #7414772a;
+  width: 100%;
+}
+.formtitulo{
+  
+  width: 100%;
+  text-align: center;
+  
 }
 h2{
-    background-color: #f7d2f2;
-    color: #4b0e57;
-    margin: 0px 10px 10px 10px;
+    color: #ffffff;
+    margin: 0px 10px 10px 20px;
     padding: 10px; 
+    font-weight: bold;
 }
-form{
-    background-color: #ffffff;
-    margin: 15px;
-    padding: 10px;
+.formulario{
+  
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  margin-bottom: 10px;
+  padding: 10px 15px 35px 15px;
+}
+.formularioadop{
+  background-color: #f7d2f2;
+  width: 400px;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 10px 20px #1e042467;
+  align-items: center;
+}
+.forminfo{
+  position: relative;
+  padding: 5px;
+  z-index: 1;
+}
+.forminfo input{
+  position: absolute;
+  border-radius: 5px;
+  margin: 0px 10px;
+}
+.forminfomensaje label{
+  display: inline;
 }
 
+button{
+  background-color: rgb(255, 255, 255);
+  color: #4b0e57;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight:bold ;
+}
+button:hover{
+  background-color: #4b0e57;
+  color: #ffffff;
+}
 .iniciofooter{
   background-color: #641c7286;
   width: 100%;
   display: flex;
   justify-content: center;
+  padding: 20px 0px 0px 0px;
  
 }
 .iniciofooter p{

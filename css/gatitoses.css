@@ -6,6 +6,7 @@ body{
   padding: 0;
   background-image: url("../img/fondo.jpg");
 }
+/*menu*/
 .navinicio{
   background-color: #4b0e57;
   width: 100%;
@@ -37,27 +38,28 @@ a:hover{
   display: block; 
   margin: 5px 20px;
 }
-
+/*parte del boton menu*/
 .btnpadre {
   position: relative;
   display: inline-block;
   padding-right: 20px;
+  text-align: center;
 }
 .btnmenu {
   background-color: #4b0e57;
   color: white;
-  padding:0px 16px;
+  padding-right: 15px;
   font-size: 16px;
   border: none;
   cursor: pointer;
   font-family: 'Poppins', sans-serif; 
   font-weight:bold ;
+  text-align: center;
 }
 .btncontenido {
   display: none;
   position: absolute;
   background-color: #ffffffe8;
-  min-width: 160px;
   box-shadow: 5px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -68,6 +70,7 @@ a:hover{
   display: block;
   font-family: 'Poppins', sans-serif ;
   padding: 5px;
+  margin: 5px;
 }
 .btncontenido a:hover {
   background-color:  #84289793
@@ -78,10 +81,12 @@ a:hover{
 .btnpadre:hover .btnmenu {
   background-color: #4b0e57;
 }
+/* inicia la pagina*/
 h1{
   font-size: 2.5rem;
   padding: 90px 0px 5px 0px;
   margin: 0px 0px 15px 15px;  
+  font-weight: bold;
 }
 h4{
   background-color: #ffffff;
