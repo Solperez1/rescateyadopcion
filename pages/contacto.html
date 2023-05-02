@@ -13,67 +13,71 @@
     <title>GATco</title>
 </head>
 <body>
-    <header>    
-        <nav class="navinicio">
-          <div>
-            <a class="navlogo" href="../index.html">
-                <img src="../img/logoredondo.png" alt="logo" width="65" height="65">
-            </a>
-          </div>
+  <header>    
+    <nav class="navinicio">
+      <div>
+        <a class="navlogo" href="../index.html">
+        <img src="../img/logoredondo.png" alt="logo" width="65" height="65"> </a>
+      </div>
           <ul>
             <li><a href="../index.html">INICIO</a></li>
             <li><a href="../pages/adoptante.html">NOSOTROS</a></li>
             <li><a href="../pages/gatitos.html">GATITOS</a></li>
             <li><a href="contacto.html">CONTACTO</a></li>
 
-            <div class="btnpadre">
-              <button class="btnmenu">FORMULARIOS</button>
+           <div class="btnpadre">
+             <button class="btnmenu">FORMULARIOS</button>
               <div class="btncontenido">
-                <a href="../pages/adoptante.html">ADOPTANTE</a>
-                <a href="../pages/transito.html">TRANSITO</a>
-              
+               <a href="../pages/adoptante.html">ADOPTANTE</a>
+               <a href="../pages/transito.html">TRANSITO</a>
               </div>
-            </div>
-
+           </div>
           </ul>
-        </nav>
-    </header>
+     </nav>
+  </header>
     <main>
-        <div class="iniciocontact">
+      <div class="iniciocontact">
             <h1>Contacto</h1>
-           
-        </div>
-        <div class="forminfop">
+      </div>
+      <div class="forminfop">
            <p>Para hacer una consulta informá tu nombre, tu mail y el mensaje que queres transmitir:</p>
-           
-            <p>Si quieres saber novedades sobre los gatitos o quieres dejarnos
+           <p>Si quieres saber novedades sobre los gatitos o quieres dejarnos
                informacion de nuevos casos, ingresa tu mail. Todos los mensajes 
                seran revisados y nos contactaremos via mail.</p>
-         </div >
-         <section class="formfondo">
-           <form action="" method="post">
-            
-             <div class="formucontact">
-                <div class="forminfo">
-                    <label for="txtNombre">Nombre*</label>  
-                    <input type="text" name="txtNombre" id="txtNombre" required>
-                 </div>
-                 <div class="forminfo">
-                    <label for="txtApellido">Apellido*</label>  
-                    <input type="text" name="txtApellido" id="txtApellido" required>
-                 </div>
-          
-             <div class="forminfomensaje">
-                <label for="txtMensaje">Mensaje</label>
-                <textarea name="txtMensaje" id="txtMensaje" placeholder="Escribe aqui.."> </textarea>
-             </div>
-             <div>
-                <button type="submit" name="btnEnviar" id="btnEnviar" >ENVIAR</button>
-                <button type="reset" name="btnBorrar" id="btnBorrar" >BORRAR</button>
-             </div>
-            </div>
-         </form>
-        </section>
+       </div >
+       <section class="formulario" > 
+        <div class="formularioadop">
+        <form action="" method="post">
+
+        <div class="forminfo">
+            <label for="txtNombre">Nombre*</label>  
+            <input type="text" name="txtNombre" id="txtNombre" required>
+         </div>
+         <div class="forminfo">
+            <label for="txtApellido">Apellido*</label>  
+            <input type="text" name="txtApellido" id="txtApellido" required>
+         </div>
+         <div class="forminfo">
+            <label for="Correo">Email*</label>  
+            <input type="email" name="Correo" id="Correo" placeholder="Ej:sol123@hotmail.com" required>
+         </div>
+         <div class="forminfo">
+            <label for="txtMensaje">Mensaje:</label>
+            <textarea name="txtMensaje" id="txtMensaje"> </textarea>
+         </div>
+         <div class="forminfomensaje">
+            <input type="checkbox" name="checkboxTerminos" id="checkboxTerminos">
+            <label for="checkboxTerminos">Quieo recibir novedades sobre GATco.</label>
+         </div>
+         <div>
+            <button type="submit" name="btnEnviar" id="btnEnviar" >ENVIAR</button>
+        
+            <button type="reset" name="btnBorrar" id="btnBorrar" >BORRAR</button>
+         </div>
+        
+        </form>
+    </div>
+  </section>
          </div>
     </main>
     <footer>

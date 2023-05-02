@@ -13,6 +13,7 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center; 
+    z-index: 1;
   }
   .navinicio ul{
     margin:0;
@@ -94,11 +95,11 @@ html{
 }
 
 .infoNOS{
-    background-color: #ffffff;
+    background-color: #ffffffe3;
+    border-radius: 15px;
     text-align: center;
     margin: 20px;
     padding: 10px;
-    border: 3px #f7d2f2 dotted;
 }
 .infoNOS h3{
     color: #4b0e57;
@@ -111,21 +112,55 @@ html{
   text-align: center;
   color: #4b0e57;
 }
-
-.info{
+.infoemtitulo h2{
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #4b0e57;
+}
+.infoempleo{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.nosempleados{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   background-color:#ffffff ;
   border: 3px #f7d2f2 dotted;
+  border-radius: 20px;
+  margin: 20px;
+  box-shadow:0 10px 20px #7d748081;
+  width: 400px;
+  height: 300px;
+}
+.nosempleados h4{
   text-align: center;
+  font-weight: bold;
+  color: #000;
+}
+.infop{
+  display: block;
+  text-align:left;
+  padding: 10px;
+}
+.infop p{
+  text-align: left;
+}
+.infop h2{
+  padding-top: 10px;
+}
+
+.nosempleados img{
+  border-radius: 80px; 
+  border: 10px #4b0e5749 solid;
   margin: 20px;
 }
-.info h2{
-  color: #4b0e57;
-  padding:15px 20px 0px 20px;
-}
-.info p{
-  text-align: center;
-  padding:10px 30px 10px 30px;
-}
+
   .iniciofooter{
     background-color: #641c7286;
     width: 100%;

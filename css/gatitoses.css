@@ -85,7 +85,7 @@ a:hover{
 h1{
   font-size: 2.5rem;
   padding: 90px 0px 5px 0px;
-  margin: 0px 0px 15px 15px;  
+  margin: 0px 0px 15px 25px;  
   font-weight: bold;
 }
 h4{
@@ -103,12 +103,17 @@ h4{
 .fondotarget{
   background-color: #fad6f567;
   width: 100%;
+  text-align: center;
+}
+.fondotarget p{
+  padding:5px 25px 10px 25px;
 }
 .infogatos{
   color: #ffffff;
   background-color: #8428973f;
   width: 100%; 
 }
+
 .infogatos h4{
     margin-left: 15px;
 }
@@ -120,10 +125,11 @@ h4{
 }
 
 .targetascat{
+     box-shadow: 0 10px 20px #7d748081;
      background-color: #f7d1f1c5;
      margin: 20px;
      width: 230px;
-     border: 3px solid #5f1d564d;
+     border: 3px solid #ffffffdc;
      border-radius: 15px;
      display: block;
 }

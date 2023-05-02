@@ -6,88 +6,94 @@ body{
     padding: 0;
     background-image: url("../img/fondo.jpg");
 }
+/*menu*/
+.respmenu img{
+  width: 80px;
+  height: 80px;
+  padding: 5px;
+  left:0;
+}
+.respmenu input[type="checkbox"] {
+ visibility: hidden;
+}
+.respmenu .bi-list {
+ visibility: hidden;
+}
+.respmenu{
+  background-color: #4b0e57;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+}
+.menures{
+  display: flex;
+  align-items: center;
+}
+.menures li{
+  padding: 5px 10px;
+  list-style-type: none;
+  margin-top: 10px;
+}
+.menures a{
+  color: #ffffff;  
+  font-weight:bold ;
+  text-decoration: none;
+}
+a:hover{
+  color: #e74f89;
+}
+/*boton form menu*/
+.btnpadre {
+  position: relative;
+  display: inline-block;
+  padding-right: 20px;
+  text-align: center;
+}
+.btnmenu {
+  background-color: #4b0e57;
+  color: white;
+  padding-right: 15px;
+  padding-top: 13px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif; 
+  font-weight:bold ;
+  text-align: center;
+}
+.btncontenido {
+  display: none;
+  position: absolute;
+  background-color: #ffffffe8;
+  box-shadow: 5px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.btncontenido a {
+  color:#4b0e57;
+  text-decoration: none;
+  display: block;
+  font-family: 'Poppins', sans-serif ;
+  padding: 5px;
+  margin: 13px;
+}
+.btncontenido a:hover {
+  background-color:  #84289793
+}
+.btnpadre:hover .btncontenido {
+  display: block;
+}
+.btnpadre:hover .btnmenu {
+  background-color: #4b0e57;
+}
+/*fin del menu inicio pag*/
 .inicioportada{
     background-image: url(../img/imginiciop.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    
-}
-.navinicio{
-    background-color: #4b0e57;
-    width: 100%;
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-}
-.navinicio ul{
-    margin:0;
-}
-.navinicio ul li{
-    display: inline-block;
-    padding: 0px 12px; 
-} 
-.navinicio li{
-    list-style-type: none;
-}
-.navinicio a{
-    color: #ffffff;  
-    font-weight:bold ;
-    text-decoration: none;
-}
-a:hover{
-    color: #e74f89;
-}
-.navlogo img{ 
-    align-items: center;
-    display: block; 
-    margin: 5px 20px;
-}
-
-  .btnpadre {
-    position: relative;
-    display: inline-block;
-    padding-right: 20px;
-    text-align: center;
-  }
-  .btnmenu {
-    background-color: #4b0e57;
-    color: white;
-    padding-right: 15px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    font-family: 'Poppins', sans-serif; 
-    font-weight:bold ;
-    text-align: center;
-  }
-  .btncontenido {
-    display: none;
-    position: absolute;
-    background-color: #ffffffe8;
-    box-shadow: 5px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  .btncontenido a {
-    color:#4b0e57;
-    /*padding: 12px 16px;*/
-    text-decoration: none;
     display: block;
-    font-family: 'Poppins', sans-serif ;
-    padding: 5px;
-    margin: 5px;
-  }
-  .btncontenido a:hover {
-    background-color:  #84289793
- }
-  .btnpadre:hover .btncontenido {
-    display: block;
-  }
-  .btnpadre:hover .btnmenu {
-    background-color: #4b0e57;
-  }
-
+}
 .inicio{
     background-color: #ffffff6c;
 }
@@ -122,7 +128,8 @@ a:hover{
     display: block;
     margin: auto;
     position: center;
-
+    width: 700px;
+    height: 500px;
 }
 .video p{
     text-align: center;
@@ -147,4 +154,210 @@ a:hover{
 }
 .iniciofooter a:hover{
     color: #ffffff;
+}   
+@media (min-width: 300px) and
+(orientation: portrait) {
+  .respmenu img{
+    width: 67px;
+    height: 67px;
+    padding: 5px;
+    left:0;
+  }
+  .respmenu input[type="checkbox"] {
+   visibility: visible;
+   opacity: 0;
+  }
+  .respmenu .bi-list {
+   visibility: visible;
+  }
+
+.menures a {
+color: inherit;
+text-decoration: none;
+display: block;
+padding: 10px 20px 10px 10px;
+list-style-type: none;
+font-weight: bold;
 }
+.respmenu input[type="checkbox"], .respmenu .bi-list {
+position: absolute;
+box-sizing: border-box;
+align-items: center;
+margin: 0;
+padding: 0;
+right: 0;
+top: 0;
+width: 52px;
+height: 48px;
+}
+.respmenu .bi-list {
+font-size: 48px;
+pointer-events: none;
+display:flex;
+align-items: center;
+margin:5px 5px;
+padding:5px 10px 0px 0px;
+}
+.respmenu {
+list-style-type: none;
+color: white;
+background: #4b0e57;
+min-height: 48px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.menures{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.respmenu nav {
+display: none;
+
+}
+.respmenu input:checked ~ nav {
+display: block;
+text-align: right;
+}
+.respmenu nav ul{
+list-style-type: none;
+}
+a:hover{
+color: #e74f89;
+}
+.navlogo img{ 
+display: block; 
+margin: 5px 20px;
+}
+.video iframe{
+  display: block;
+  margin: auto;
+  position: center;
+  width: 340px;
+  height: 200px;
+}
+} 
+  @media (max-width: 700px) and
+  (orientation: landscape) {
+    .respmenu img{
+      width: 67px;
+      height: 67px;
+      padding: 5px;
+      left:0;
+    }
+    .respmenu input[type="checkbox"] {
+     visibility: visible;
+     opacity: 0;
+    }
+    .respmenu .bi-list {
+     visibility: visible;
+    }
+  
+.menures a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px 10px 10px;
+  list-style-type: none;
+  font-weight: bold;
+}
+.respmenu input[type="checkbox"], .respmenu .bi-list {
+  position: absolute;
+  box-sizing: border-box;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  right: 0;
+  top: 0;
+  width: 52px;
+  height: 48px;
+}
+.respmenu .bi-list {
+  font-size: 48px;
+  pointer-events: none;
+  display:flex;
+  align-items: center;
+  margin:5px 5px;
+  padding:5px 10px 0px 0px;
+}
+.respmenu {
+  list-style-type: none;
+  color: white;
+  background: #4b0e57;
+  min-height: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menures{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.respmenu nav {
+  display: none;
+ 
+}
+.respmenu input:checked ~ nav {
+  display: block;
+  text-align: right;
+}
+.respmenu nav ul{
+  list-style-type: none;
+}
+a:hover{
+  color: #e74f89;
+}
+.navlogo img{ 
+  display: block; 
+  margin: 5px 20px;
+}
+.btnpadre {
+  background-color: #4b0e57;
+  position: relative;
+  display: inline-block;
+  padding:10px;
+  text-align: center;
+}
+.btnmenu {
+  background-color:#4b0e57 ;
+  color: white;
+  padding-right: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif; 
+  font-weight:bold ;
+  text-align: center;
+}
+.btncontenido {
+  display: none;
+  position: absolute;
+  background-color: #ffffffe1;
+  box-shadow: 5px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.btncontenido a {
+  color:#4b0e57;
+  text-decoration: none;
+  display: block;
+  font-family: 'Poppins', sans-serif ;
+  padding: 10px;
+  margin: 5px;
+}
+.btncontenido a:hover {
+  background-color:  #84289793
+}
+.btnpadre:hover .btncontenido {
+  display: block;
+}
+.btnpadre:hover .btnmenu {
+  background-color: #4b0e57;
+}
+
+  }
