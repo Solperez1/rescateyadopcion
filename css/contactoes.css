@@ -273,7 +273,15 @@ margin: 5px 20px;
 .btnpadre{
   padding: 0px 0px 0px 10px;
 }
+.formularioadop{
 
+  background-color: #f7d2f2;
+  width: 280px;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 10px 20px #1e042467;
+  align-items: center;
+}
 
 } 
   @media (max-width: 920px) and
