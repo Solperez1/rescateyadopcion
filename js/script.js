@@ -27,9 +27,15 @@ open.addEventListener('click', () => {
 close.addEventListener('click', () => {
     modal_container.classList.remove('show');
 });
-
-const btnSaludoPersonalizado = document.getElementById('personalizado');
+//intento 1
+const btnSaludoPersonalizado = document.getElementById('btnpersonalizado');
 
 btnSaludoPersonalizado.onclick = () =>{
-    let nommbreUsuaruio = prompt("Ingre tu nombre para que te saludemos");
-    alert(nommbreUsuaruio)};
+    prompt("Ingre tu nombre para que te saludemos");}
+
+//intento 2
+let botonhola = document.getElementById("btnhola");
+
+botonhola.addEventListener("click", respuestaclick)
+    function respuestaclick(){
+    console.log("EJEMPLO"); }

@@ -8,6 +8,7 @@ body {
   background-image: url("../img/fondo.jpg");
 }
 
+/*js*/
 .ventana-modal {
   margin: 20px auto;
   background-image: url("../img/imginicio.jpg");
@@ -101,6 +102,7 @@ body {
   left: 0;
 }
 
+
 /*menu*/
 .navlogo {
   padding-left: 40px;
@@ -175,7 +177,7 @@ a:hover {
 .btncontenido {
   display: none;
   position: absolute;
-  background-color: #d772ebe8;
+  background-color: #e767b2e8;
   box-shadow: 5px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
@@ -232,7 +234,7 @@ a:hover {
 
 .info h2 {
   color: #4b0e57;
-  padding: 15px 20px 0px 20px;
+  padding: 15px 40px 0px 40px;
 }
 
 .info p {
@@ -273,43 +275,47 @@ a:hover {
 
 .carousel-control-prev {
   z-index: 1;
-  background-color:#641c7286;
+  background-color: #641c7286;
   border-radius: 100%;
   margin: auto;
   height: 200px;
+  display: block;
   display: block;
 }
 
 .carousel-control-next {
   z-index: 1;
   background-color: #ffffff;
-  background-color:#641c7286;
+  background-color: #641c7286;
   border-radius: 100%;
   margin: auto;
   height: 200px;
   display: block;
+
 }
-.btngatitos a{
+
+.btngatitos a {
   text-align: center;
   color: #ffffff;
   text-decoration: none;
 }
-.btngatitos{
-background: #5f176dc0;
-color: white;
-margin: auto;
-margin-top: 30px;
-text-align: center;
-font-size: 2rem;
-font-weight: 700;
-cursor: pointer;
-border-radius: 5px;
-display: block;
-width: 350px;
+
+.btngatitos {
+  background: #5f176dc0;
+  color: white;
+  margin: auto;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 5px;
+  display: block;
+  width: 350px;
 }
 
 .bntgatitos:hover {
-background: #5f176d;
+  background: #5f176d;
 }
 
 .video {
@@ -610,13 +616,16 @@ background: #5f176d;
     list-style-type: none;
     padding-left: 0px;
   }
+
   a:hover {
     color: #e74f89;
   }
+
   .navlogo img {
     display: block;
     margin: 5px 20px;
   }
+
   .video iframe {
     display: block;
     margin: auto;
