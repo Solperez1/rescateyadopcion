@@ -260,6 +260,19 @@ a:hover {
   font-size: large;
 }
 
+.infocon {
+  background-color: #f9dbf5;
+  border: 3px #ffffff solid;
+  text-align: center;
+  margin: 30px 0px 20px 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.infocon p {
+  text-align: center;
+  padding: 10px 65px 10px 65px;
+  font-size: large;
+}
 /*carrousel*/
 .carrutitulo h2 {
   font-size: 3rem;
