@@ -340,14 +340,6 @@ a:hover {
   width: 100%;
 }
 
-.video iframe {
-  display: block;
-  margin: auto;
-  position: center;
-  width: 700px;
-  height: 500px;
-}
-
 .video p {
   text-align: center;
   margin: 15px;
@@ -898,15 +890,6 @@ button:hover {
     display: block;
     margin: 5px 20px;
   }
-
-  .video iframe {
-    display: block;
-    margin: auto;
-    position: center;
-    width: 340px;
-    height: 200px;
-  }
-
   .btnpadre {
     padding: 0px 0px 0px 10px;
   }
@@ -1115,13 +1098,6 @@ button:hover {
     margin: 5px 20px;
   }
 
-  .video iframe {
-    display: block;
-    margin: auto;
-    position: center;
-    width: 400px;
-    height: 250px;
-  }
 }
 
 @media (max-width: 1200px) and (orientation: landscape) {
