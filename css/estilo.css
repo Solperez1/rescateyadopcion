@@ -8,7 +8,7 @@ body {
   background-image: url("../img/fondo.jpg");
 }
 
-/*js*/
+/*Modal 1*/
 .ventana-modal {
   margin: 20px auto;
   background-image: url("../img/imginicio.jpg");
@@ -44,7 +44,6 @@ body {
   font-size: 1.2rem;
 }
 
-
 .ventana-modal .boton {
   background: #5f176dc0;
   border: none;
@@ -65,18 +64,14 @@ body {
 
 .ventana-modal .activo {
   display: block;
-  /* Se muestra aviso */
 }
 
 .fondo-modal {
   display: none;
   background-color: rgba(0, 0, 0, 0.9176470588);
-  height: 100vh;
   padding-top: 100px;
   position: fixed;
-  /* *Fijamos fondo */
   z-index: 99;
-  /* *Colocacion detras del bloque cookies */
   width: 100vw;
   height: 100vh;
   top: 0;
@@ -87,21 +82,44 @@ body {
   display: block;
 }
 
-.fondo-modal {
+/*modal 2*/
+
+.modal {
   display: none;
-  background-color: rgba(0, 0, 0, 0.9176470588);
-  height: 100vh;
-  padding-top: 100px;
   position: fixed;
-  /* *Fijamos fondo */
-  z-index: 99;
-  /* *Colocacion detras del bloque cookies */
-  width: 100vw;
-  height: 100vh;
-  top: 0;
+  z-index: 1;
+  padding-top: 200px;
   left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
+.modal-content {
+  position: relative;
+  background-color: white;
+  margin: auto;
+  padding: 20px;
+  width: 450px;
+  line-height: 150%;
+  border-radius: 10px;
+}
+
+.close {
+  color: black;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 /*menu*/
 .navlogo {
@@ -150,7 +168,7 @@ body {
 }
 
 a:hover {
-  color: #e74f89;
+  color: #ffffff;
 }
 
 /*boton form menu*/
@@ -177,7 +195,7 @@ a:hover {
 .btncontenido {
   display: none;
   position: absolute;
-  background-color: #e767b2e8;
+  background-color: #e9bdd2e8;
   box-shadow: 5px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
@@ -192,7 +210,7 @@ a:hover {
 }
 
 .btncontenido a:hover {
-  background-color: #84289793
+  background-color: #ffffff
 }
 
 .btnpadre:hover .btncontenido {
@@ -229,7 +247,6 @@ a:hover {
   background-color: #f9dbf5;
   border: 3px #ffffff solid;
   text-align: center;
-
 }
 
 .info h2 {
@@ -244,7 +261,6 @@ a:hover {
 }
 
 /*carrousel*/
-
 .carrutitulo h2 {
   font-size: 3rem;
   padding: 45px 0px 10px 0px;
@@ -265,7 +281,7 @@ a:hover {
   margin: auto;
   position: center;
   padding: 20px;
-  box-shadow: 0 5px 100px rgba(135, 132, 136, 0.506);
+  box-shadow: 0 5px 100px rgba(135, 132, 136, 0.24);
   ;
 }
 
@@ -291,9 +307,9 @@ a:hover {
   margin: auto;
   height: 200px;
   display: block;
-
 }
 
+/*boton g*/
 .btngatitos a {
   text-align: center;
   color: #ffffff;
@@ -318,6 +334,7 @@ a:hover {
   background: #5f176d;
 }
 
+/*video*/
 .video {
   background-color: #ffffffab;
   width: 100%;
@@ -340,7 +357,8 @@ a:hover {
 /*boton js*/
 .btnjava {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   padding: 35px;
 }
 
@@ -348,12 +366,18 @@ a:hover {
   display: flex;
   flex-direction: column;
   padding-right: 10px;
+  text-align: center;
 }
 
 .btnsaludo h4 {
   color: #4b0e57;
   font-size: 3rem;
   font-weight: bold;
+}
+
+.btnjava button {
+  padding: 10px;
+  margin: 10px;
 }
 
 /*footer*/
@@ -363,7 +387,6 @@ a:hover {
   display: flex;
   justify-content: center;
   padding-top: 30px;
-
 }
 
 .pfooter {
@@ -388,6 +411,400 @@ a:hover {
 }
 
 .iniciofooter .bi-facebook {
+  color: #ffffff;
+}
+
+/*NOSOTROS*/
+.inicioNOS {
+  color: #ffffff;
+  background-color: #8428973f;
+  width: 100%;
+}
+
+.inicioNOS h1 {
+  font-size: 2.5rem;
+  padding: 90px 0px 5px 40px;
+  margin: 0px 0px 15px 15px;
+  font-weight: bold;
+}
+
+.infoNOS {
+  background-color: #ffffffe3;
+  border-radius: 15px;
+  text-align: center;
+  margin: 20px;
+  padding: 10px 65px 10px 65px;
+  ;
+}
+
+.infoNOS h3 {
+  color: #4b0e57;
+}
+
+.inicio h1 {
+  font-size: 3.5rem;
+  padding: 90px 0px 250px 0px;
+  margin: 0px 0px 0px 15px;
+  font-weight: bold;
+  text-align: center;
+  color: #4b0e57;
+}
+
+.infoemtitulo h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #4b0e57;
+}
+
+.infoempleo {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nosempleados {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  border: 3px #f7d2f2 dotted;
+  border-radius: 20px;
+  margin: 20px;
+  box-shadow: 0 10px 20px #7d748081;
+  width: 400px;
+  height: 300px;
+}
+
+.nosempleados h4 {
+  text-align: center;
+  font-weight: bold;
+  color: #000;
+}
+
+.infop {
+  display: block;
+  text-align: left;
+  padding: 10px;
+}
+
+.infop p {
+  text-align: left;
+}
+
+.infop h2 {
+  padding-top: 10px;
+}
+
+.nosempleados img {
+  border-radius: 80px;
+  border: 10px #4b0e5749 solid;
+  margin: 20px;
+}
+
+/*GATITOS*/
+.infogatos h1 {
+  font-size: 2.5rem;
+  padding: 90px 0px 5px 0px;
+  margin: 0px 0px 15px 40px;
+  font-weight: bold;
+}
+
+.fondotarget h4 {
+  background-color: #ffffff;
+  color: #4b0e57;
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  display: block;
+  font-size: 2rem;
+}
+
+.fondotarget {
+  background-color: #fad6f567;
+  width: 100%;
+  text-align: center;
+}
+
+.fondotarget p {
+  text-align: center;
+  padding: 10px 65px 10px 65px;
+  font-size: large;
+}
+
+.infogatos {
+  color: #ffffff;
+  background-color: #8428973f;
+  width: 100%;
+}
+
+.target {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.targetas {
+  margin: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.targetascat {
+  width: 230px;
+  border: 3px solid #ffffffdc;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px #7d748081;
+  background-color: #f7d1f1c5;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.targetascat img {
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.targetascat ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px 0px 5px 0px;
+  display: block;
+}
+
+.targetas h3 {
+  text-align: center;
+  color: #5c126b;
+  font-weight: bold;
+}
+
+.targetascat a {
+  background-color: rgb(255, 255, 255);
+  color: #4b0e57;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  width: 50%;
+  display: block;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.targetascat a:hover {
+  background-color: #4b0e57;
+  color: #ffffff;
+}
+
+.btnmichis {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.btnmichi {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  padding: 15px;
+  background-color: #ffffffcb;
+  border-radius: 10px;
+}
+
+.btnmichi h4 {
+  color: #4b0e57;
+  font-weight: bold;
+}
+
+.btnmichi a {
+  background-color: #4b0e57;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  width: 50%;
+  display: block;
+  margin: auto;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.btnmichi a:hover {
+  background-color: #6d187ec4;
+  color: #ffffff;
+}
+
+/*CONTACTO*/
+.iniciocontact {
+  color: #ffffff;
+  background-color: #8428973f;
+  width: 100%;
+}
+
+.iniciocontact h1 {
+  font-size: 2.5rem;
+  padding: 90px 0px 5px 40px;
+  margin: 0px 0px 15px 15px;
+  font-weight: bold;
+}
+
+.infocont {
+  margin: 20px;
+  padding: 10px 40px 10px 40px;
+}
+
+.infocont p {
+  text-align: justify;
+  padding: 10px 30px 10px 30px;
+  font-size: large;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px 15px 35px 15px;
+}
+
+.formularioadop {
+  background-color: #f7d2f2;
+  width: 60%;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 10px 20px #1e042467;
+  align-items: center;
+}
+
+.forminfo {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.forminfo input {
+  border-radius: 5px;
+  margin: 0px 10px;
+}
+
+.forminfomensaje label {
+  display: inline;
+}
+
+button {
+  background-color: rgb(255, 255, 255);
+  color: #4b0e57;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #4b0e57;
+  color: #ffffff;
+}
+
+/*ADOP Y TRANS*/
+.homeadop {
+  color: #ffffff;
+  background-color: #8428973f;
+  width: 100%;
+}
+
+.homeadop h1 {
+  font-size: 2.5rem;
+  padding: 90px 40px 5px 40px;
+  margin: 0px 0px 15px 20px;
+  font-weight: bold;
+}
+
+.inicioadop {
+  background-color: #ffffff;
+  color: #4b0e57;
+  margin: 20px 60px 20px 60px;
+  padding: 15px;
+
+}
+
+.inicioadop p {
+  text-align: center;
+  padding: 10px 40px 10px 40px;
+}
+
+.infop p {
+  text-align: justify;
+}
+
+.formfondo {
+  background-color: #7414772a;
+  width: 100%;
+}
+
+.formtitulo {
+  width: 100%;
+  text-align: center;
+
+}
+
+.formtitulo h2 {
+  color: #ffffff;
+  margin: 0px 10px 10px 20px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px 15px 35px 15px;
+}
+
+.formularioadop {
+
+  background-color: #f7d2f2;
+  width: 500px;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 10px 20px #1e042467;
+  align-items: center;
+}
+
+.forminfo {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.forminfo input {
+  border-radius: 5px;
+  margin: 0px 10px;
+}
+
+.forminfomensaje label {
+  display: inline;
+}
+
+button {
+  background-color: rgb(255, 255, 255);
+  color: #4b0e57;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #4b0e57;
   color: #ffffff;
 }
 
@@ -495,21 +912,18 @@ a:hover {
   }
 
   /*carru*/
-
   .carousel-inner {
-    height: 330px;
+    height: 350px;
     width: 70%;
     display: block;
     margin: auto;
     position: center;
     padding: 20px;
-    box-shadow: 0 10px 20px #7d748081;
-    ;
+    box-shadow: 0 5px 100px rgba(135, 132, 136, 0);
   }
 
   .carousel-indicators {
     z-index: 1;
-
   }
 
   .carousel-control-prev {
@@ -517,8 +931,8 @@ a:hover {
     background-color: #ffffff;
     border-radius: 50px;
     margin: 150px 50px 0px 20px;
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     display: block;
   }
 
@@ -527,11 +941,86 @@ a:hover {
     background-color: #ffffff;
     border-radius: 50px;
     margin: 150px 20px 0px 50px;
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     display: block;
   }
 
+  .carrutitulo h2 {
+    font-size: 2rem;
+  }
+
+  .carrutitulo p {
+    padding: 20px;
+  }
+
+  .info h2 {
+    padding: 20px;
+  }
+
+  .info p {
+    padding: 15px;
+    font-size: large;
+  }
+
+  /*GATITOS*/
+  .infogatos h1 {
+    font-size: 2rem;
+    margin: 0px 0px 15px 30px;
+  }
+
+  .fondotarget p {
+    text-align: center;
+    padding: 15px;
+    font-size: large;
+  }
+
+  .btnmichi {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    padding: 15px;
+    background-color: #ffffff60;
+    border-radius: 10px;
+  }
+
+  /*FORMULARIO*/
+  .formularioadop {
+    width: 85%;
+  }
+
+  /*ADOP Y TRAN*/
+  .homeadop h1 {
+    font-size: 2rem;
+    margin: 0px 0px 15px 10px;
+  }
+
+  .inicioadop {
+    margin: 20px 15px 20px 15px;
+    padding: 15px;
+  }
+
+  .inicioadop p {
+    text-align: center;
+    padding: 15px;
+  }
+
+  /*CONTACTO*/
+  .iniciocontact h1 {
+    font-size: 2 rem;
+    padding: 90px 0px 5px 15px;
+    margin: 0px 0px 15px 20px;
+  }
+
+  .infocont {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .infocont p {
+    text-align: justify;
+    padding: 10px;
+  }
 }
 
 @media (max-width: 920px) and (orientation: landscape) {

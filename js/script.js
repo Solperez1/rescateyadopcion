@@ -1,41 +1,29 @@
 const botonAviso = document.getElementById("cerrar-aviso");
 const ventanaModal = document.getElementById("ventana-modal");
 const fondoModal = document.getElementById("fondo-modal");
-
-
-//*Condicional
-//* ! (si no hay nada guardadao repetir aviso)
-if(!sessionStorage.getItem("ventana-modal-visto")){
-    ventanaModal.classList.add("activo") 
-    fondoModal.classList.add("activo") //*Mostramos la clase de html
+if (!sessionStorage.getItem("ventana-modal-visto")) {
+    ventanaModal.classList.add("activo")
+    fondoModal.classList.add("activo")
 }
-
-botonAviso.addEventListener("click", () =>{ //*Funcion flecha
-    ventanaModal.classList.remove("activo");//*eliminacion de clase en html
+botonAviso.addEventListener("click", () => {
+    ventanaModal.classList.remove("activo");
     fondoModal.classList.remove("activo");
-    sessionStorage.setItem("ventana-modal-visto", true)//*Guardamos la informacion y no se repite aviso
+    sessionStorage.setItem("ventana-modal-visto", true)
 })
 
-const open = document.getElementById('open');
-const modal_container = document.getElementById('modal_container');
-const close = document.getElementById('close');
+//boton 1
+document.getElementById('btnsaludo').onclick = function () {
+    alert('Saludos, Gracias por visitar GATco!');
+}
 
-open.addEventListener('click', () => {
-    modal_container.classList.add('show');
+//modal 2
+var modal = document.getElementById("ventanaModal");
+var boton = document.getElementById("abrirModal");
+var span = document.getElementsByClassName("cerrar")[0];
+
+boton.addEventListener("click", function () {
+    modal.style.display = "block";
 });
-
-close.addEventListener('click', () => {
-    modal_container.classList.remove('show');
+span.addEventListener("click", function () {
+    modal.style.display = "none";
 });
-//intento 1
-const btnSaludoPersonalizado = document.getElementById('btnpersonalizado');
-
-btnSaludoPersonalizado.onclick = () =>{
-    prompt("Ingre tu nombre para que te saludemos");}
-
-//intento 2
-let botonhola = document.getElementById("btnhola");
-
-botonhola.addEventListener("click", respuestaclick)
-    function respuestaclick(){
-    console.log("EJEMPLO"); }
